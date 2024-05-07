@@ -24,13 +24,13 @@ const AddCar = () => {
         });
     };
 
-    const handleChangePiesa = (e, index) => {
-        const { name, value } = e.target;
+    const handleChangePiesa = (e, index, field) => {
+        const { value } = e.target;
         const updatedPieseSchimb = formData.piese_schimb.map((piesa, i) => {
             if (i === index) {
                 return {
                     ...piesa,
-                    [name]: value
+                    [field]: value
                 };
             }
             return piesa;
@@ -41,12 +41,14 @@ const AddCar = () => {
         });
     };
 
+
     const addPiesa = () => {
         setFormData({
             ...formData,
             piese_schimb: [...formData.piese_schimb, { nume: "", producator: "", numar_referinta: "" }]
         });
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -159,26 +161,27 @@ const AddCar = () => {
                                 <label>Nume:</label>
                                 <input
                                     type="text"
-                                    name={`piese_schimb[${index}].nume`}
+                                    name={`nume_${index}`}
                                     value={piesa.nume}
-                                    onChange={(e) => handleChangePiesa(e, index)}
+                                    onChange={(e) => handleChangePiesa(e, index, 'nume')}
                                 />
                                 <label>Producător:</label>
                                 <input
                                     type="text"
-                                    name={`piese_schimb[${index}].producator`}
+                                    name={`producator_${index}`}
                                     value={piesa.producator}
-                                    onChange={(e) => handleChangePiesa(e, index)}
+                                    onChange={(e) => handleChangePiesa(e, index, 'producator')}
                                 />
                                 <label>Nr. referință:</label>
                                 <input
                                     type="text"
-                                    name={`piese_schimb[${index}].numar_referinta`}
+                                    name={`numar_referinta_${index}`}
                                     value={piesa.numar_referinta}
-                                    onChange={(e) => handleChangePiesa(e, index)}
+                                    onChange={(e) => handleChangePiesa(e, index, 'numar_referinta')}
                                 />
                             </div>
                         ))}
+
                         <button type="button" onClick={addPiesa}>Adaugă piesă</button>
                     </div>
                     <button type="submit" className="btn btn-primary" style={{ margin: "20px auto", display: "block" }}>Adaugă mașină</button>
