@@ -175,3 +175,51 @@ body {
 }
 
 /*----------------------------------------------------------*/
+.add-car-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/mustang-1.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-size:cover;
+  background-position: center;
+}
+
+.add-car-form {
+  width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3); /* Opacitate de 80% */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 20px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group button {
+  margin: 0 auto; /* Centrare orizontală */
+  display: block; /* Facem butonul să fie un element de tip block pentru a ocupa întreaga lățime a containerului */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}

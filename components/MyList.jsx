@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { deleteRecord, getRecords } from "@/utils/recordsFunctions";
 
 // Definirea componentului Modal separat
-const Modal = ({ isOpen, onClose, carDetails, onDelete }) => {
+const ViewCarModal = ({ isOpen, onClose, carDetails, onDelete }) => {
     if (!isOpen) return null;
 
     const handleDelete = async () => {
@@ -129,10 +129,10 @@ const MyList = () => {
                         <p>Lista este goală. Adaugă o mașină acum!</p>
                     )}
                 </div>
-                <NavLink to="/adauga-masina">
+                <NavLink to="/addcar">
                     <button className="btn">Adaugă mașină</button>
                 </NavLink>
-                <Modal isOpen={selectedCar !== null} onClose={closeModal} carDetails={selectedCar} onDelete={handleDeleteRecord} />
+                <ViewCarModal isOpen={selectedCar !== null} onClose={closeModal} carDetails={selectedCar} onDelete={handleDeleteRecord} />
             </div>
         </div>
     );
