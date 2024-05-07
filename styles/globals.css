@@ -1,19 +1,12 @@
+/* styles.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
@@ -24,10 +17,126 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/*------------------------Main Page------------------------*/
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/mustang-1.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-size:cover;
+  background-position: center;
 }
+
+.main-content {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.main-description {
+  font-size: 1.5rem;
+  max-width: 1000px; /* Schimbă valoarea la nevoie pentru a limita lățimea textului */
+}
+
+.btn {
+  background-color: white; /* Setează fundalul butonului la alb */
+  color: black; /* Setează culoarea textului la negru */
+  border: none; /* Elimină bordura butonului */
+  padding: 10px 20px; /* Adaugă puțin spațiu în interiorul butonului */
+  cursor: pointer; /* Schimbă cursorul la hover */
+  text-decoration: none; /* Elimină sublinierea textului */
+  font-size: 16px; /* Setează dimensiunea textului */
+  border-radius: 5px; /* Adaugă o ușoară curbură la colțurile butonului */
+}
+
+.btn:hover {
+  background-color: #f0f0f0; /* Schimbă culoarea de fundal la hover */
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Home Page------------------------*/
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/mustang-2.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-size: cover;
+}
+
+.home-content {
+  text-align: center;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------My Cars Page------------------------*/
+.mylist-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/mustang-2.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-size: cover;
+}
+
+.mylist-content {
+  text-align: center;
+}
+
+.mylist-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.mylist-record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centrează cardul pe verticală */
+  margin-bottom: 10px;
+}
+
+.record-column {
+  flex: 1;
+  text-align: center;
+}
+
+.record-column h3 {
+  font-size: 1.2rem; /* Mărește dimensiunea textului pentru headere */
+   font-weight: bold; 
+}
+
+.mylist-card {
+  background-color: rgba(255, 255, 255, 0.3); /* Opacitate de 80% */
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 1000px; /* Setează lățimea la 400px */
+  height: 300px; /* Setează înălțimea la 300px */
+}
+
+.btn {
+  background-color: white; /* Setează fundalul butonului la alb */
+  color: black; /* Setează culoarea textului la negru */
+  border: none; /* Elimină bordura butonului */
+  padding: 10px 20px; /* Adaugă puțin spațiu în interiorul butonului */
+  cursor: pointer; /* Schimbă cursorul la hover */
+  text-decoration: none; /* Elimină sublinierea textului */
+  font-size: 16px; /* Setează dimensiunea textului */
+  border-radius: 5px; /* Adaugă o ușoară curbură la colțurile butonului */
+}
+
+.btn:hover {
+  background-color: #f0f0f0; /* Schimbă culoarea de fundal la hover */
+}
+/*----------------------------------------------------------*/

@@ -1,12 +1,12 @@
 // /pages/index.js
 import NavBar from "@/components/NavBar";
-import MainPage from "@/components/MainPage";
+import MyList from "@/components/MyList";
 
-export default function Main() {
+export default function MyCars() {
   return (
     <div>
       <NavBar />
-      <MainPage />
+      <MyList/>
     </div>
 
   );

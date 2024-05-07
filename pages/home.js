@@ -1,13 +1,12 @@
 // /pages/index.js
 import NavBar from "@/components/NavBar";
-import MainPage from "@/components/MainPage";
+import HomePage from "@/components/HomePage";
 
-export default function Main() {
+export default function Home() {
   return (
     <div>
       <NavBar />
-      <MainPage />
+      <HomePage />
     </div>
-
   );
 }
