@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { deleteRecord, getRecords } from "@/utils/recordsFunctions";
 
 // Definirea componentului Modal separat
-const Modal = ({ isOpen, onClose, carDetails }) => {
+const Modal = ({ isOpen, onClose, carDetails, onDelete }) => {
     if (!isOpen) return null;
+
+    const handleDelete = async () => {
+        await onDelete(carDetails._id); // Apel functie stergere masina dupa id
+        onClose();
+    };
 
     return (
         <div className="modal-overlay">
@@ -28,13 +34,13 @@ const Modal = ({ isOpen, onClose, carDetails }) => {
                             </ul>
                         </li>
                     </ul>
+                    <button onClick={handleDelete} className="btn btn-danger">Șterge mașina</button>
                 </div>
             </div>
         </div>
     );
 }
 
-// Definirea componentului NavLink
 const NavLink = ({ to, children }) => {
     return (
         <a href={to} className="mx-4 text-lg text-white hover:text-gray-300">
@@ -43,21 +49,34 @@ const NavLink = ({ to, children }) => {
     );
 }
 
-// Definirea componentului MyList
 const MyList = () => {
     const [records, setRecords] = useState([]);
     const [selectedCar, setSelectedCar] = useState(null);
 
-    useEffect(() => {
+    const fetchRecords = async () => {
         try {
-            fetch('/api/records', {
-                method: 'GET',
-            })
-                .then(response => response.json())
-                .then(json => setRecords(json.data));
+            const response = await getRecords();
+            setRecords(response);
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
+    };
+
+    const handleDeleteRecord = async (id) => {
+        try {
+            const response = await deleteRecord(id);
+
+            if (response.deletedCount === 1) {
+                const newRecords = records.filter((record) => record._id !== id);
+                setRecords(newRecords);
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    };
+
+    useEffect(() => {
+        fetchRecords();
     }, []);
 
     const openModal = (carDetails) => {
@@ -113,7 +132,7 @@ const MyList = () => {
                 <NavLink to="/adauga-masina">
                     <button className="btn">Adaugă mașină</button>
                 </NavLink>
-                <Modal isOpen={selectedCar !== null} onClose={closeModal} carDetails={selectedCar} />
+                <Modal isOpen={selectedCar !== null} onClose={closeModal} carDetails={selectedCar} onDelete={handleDeleteRecord} />
             </div>
         </div>
     );
