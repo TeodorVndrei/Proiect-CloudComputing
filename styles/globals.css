@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../assets/mustang-1.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-image: url('../assets/mustang-1.jpg'); 
   background-size:cover;
   background-position: center;
 }
@@ -45,22 +45,22 @@ body {
 
 .main-description {
   font-size: 1.5rem;
-  max-width: 1000px; /* Schimbă valoarea la nevoie pentru a limita lățimea textului */
+  max-width: 1000px; 
 }
 
 .btn {
-  background-color: white; /* Setează fundalul butonului la alb */
-  color: black; /* Setează culoarea textului la negru */
-  border: none; /* Elimină bordura butonului */
-  padding: 10px 20px; /* Adaugă puțin spațiu în interiorul butonului */
-  cursor: pointer; /* Schimbă cursorul la hover */
-  text-decoration: none; /* Elimină sublinierea textului */
-  font-size: 16px; /* Setează dimensiunea textului */
-  border-radius: 5px; /* Adaugă o ușoară curbură la colțurile butonului */
+  background-color: white; 
+  color: black; 
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none; 
+  font-size: 16px; 
+  border-radius: 5px; 
 }
 
 .btn:hover {
-  background-color: #f0f0f0; /* Schimbă culoarea de fundal la hover */
+  background-color: #f0f0f0;
 }
 /*----------------------------------------------------------*/
 
@@ -70,7 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../assets/mustang-2.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-image: url('../assets/mustang-2.jpg');
   background-size: cover;
 }
 
@@ -85,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../assets/mustang-2.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-image: url('../assets/mustang-2.jpg');
   background-size: cover;
 }
 
@@ -112,32 +112,17 @@ body {
 }
 
 .record-column h3 {
-  font-size: 1.2rem; /* Mărește dimensiunea textului pentru headere */
+  font-size: 1.2rem; 
    font-weight: bold; 
 }
 
 .mylist-card {
-  background-color: rgba(255, 255, 255, 0.3); /* Opacitate de 80% */
+  background-color: rgba(255, 255, 255, 0.3);
   border: 2px solid black;
   border-radius: 15px;
   padding: 20px;
-  width: 1000px; /* Setează lățimea la 400px */
-  height: 300px; /* Setează înălțimea la 300px */
-}
-
-.btn {
-  background-color: white; /* Setează fundalul butonului la alb */
-  color: black; /* Setează culoarea textului la negru */
-  border: none; /* Elimină bordura butonului */
-  padding: 10px 20px; /* Adaugă puțin spațiu în interiorul butonului */
-  cursor: pointer; /* Schimbă cursorul la hover */
-  text-decoration: none; /* Elimină sublinierea textului */
-  font-size: 16px; /* Setează dimensiunea textului */
-  border-radius: 5px; /* Adaugă o ușoară curbură la colțurile butonului */
-}
-
-.btn:hover {
-  background-color: #f0f0f0; /* Schimbă culoarea de fundal la hover */
+  width: 1000px;
+  height: 300px;
 }
 
 .modal-overlay {
@@ -173,14 +158,15 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
-
 /*----------------------------------------------------------*/
+
+/*------------------------Add Car Page------------------------*/
 .add-car-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../assets/mustang-1.jpg'); /* Înlocuiește cu calea către imaginea ta */
+  background-image: url('../assets/mustang-1.jpg');
   background-size:cover;
   background-position: center;
 }
@@ -188,7 +174,7 @@ body {
 .add-car-form {
   width: 800px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.3); /* Opacitate de 80% */
+  background-color: rgba(255, 255, 255, 0.3); 
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -207,7 +193,7 @@ body {
 }
 
 .form-group button {
-  margin: 0 auto; /* Centrare orizontală */
+  margin: 0 auto;
   display: block; /* Facem butonul să fie un element de tip block pentru a ocupa întreaga lățime a containerului */
 }
 
@@ -222,4 +208,25 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   color: black;
+}
+/*----------------------------------------------------------*/
+
+/*------------------------Virtual Assistant Page------------------------*/
+.chatpage-container {
+  background-image: url('../assets/mustang-1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  max-width: 700px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+ 
 }

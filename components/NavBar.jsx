@@ -58,7 +58,7 @@ const Navbar = () => {
                 <div className={`md:flex items-center ${open ? 'flex-col md:flex-row' : 'hidden'}`}>
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/mylist">My Cars</NavLink>
-                    <NavLink to="/about">Virtual Assistant</NavLink>
+                    <NavLink to="/virtualassistant">Virtual Assistant</NavLink>
                 </div>
             </div>
         </nav>
