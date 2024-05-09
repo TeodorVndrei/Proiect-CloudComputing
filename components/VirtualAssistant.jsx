@@ -54,6 +54,7 @@ function ChatComponent(props) {
                         messages: filteredChatHistory,
                         type: 'autoassist',
                     }),
+                    signal: AbortSignal.timeout(20000),
                 });
                 const json = await response.json();
 
