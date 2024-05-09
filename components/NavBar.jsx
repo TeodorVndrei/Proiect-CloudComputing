@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className="fixed w-full top-0 bg-transparent shadow-none px-4 py-4 flex justify-between items-center">
             <div className="flex items-center">
-                <a className="text-3xl font-semibold text-white" href="/">AutoXPert</a>
+                <a className="text-3xl font-semibold text-white">AutoXPert</a>
             </div>
             <div className="flex items-center">
                 <div className="md:hidden">
