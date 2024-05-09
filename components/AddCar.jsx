@@ -55,7 +55,7 @@ const AddCar = () => {
         try {
             const response = await createRecord(formData);
             if (response) {
-                router.push("/");
+                router.push("/mylist");
             } else {
                 alert("Failed to create record");
             }
