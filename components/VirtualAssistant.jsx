@@ -52,7 +52,7 @@ function ChatComponent(props) {
                     },
                     body: JSON.stringify({
                         messages: filteredChatHistory,
-                        type: 'user',
+                        type: 'autoassist',
                     }),
                 });
                 const json = await response.json();

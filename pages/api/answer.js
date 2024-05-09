@@ -11,14 +11,14 @@ const SYSTEM_PROMPTS = {
 		MAX_TOKENS: 50,
 		TYPE: 'simple_assistant',
 	},
-	USER: {
+	AutoAssist: {
 		MESSAGE: {
 			'role': 'system',
-			'content': 'You are a user. You respond with normal sentences.',
+			'content': 'You are posing as a mechanic, offering practical aid to drivers by helping them find important details about their cars and compatible parts.',
 		},
 		TEMPERATURE: 1,
-		MAX_TOKENS: 100,
-		TYPE: 'user',
+		MAX_TOKENS: 200,
+		TYPE: 'autoassist',
 	},
 };
 
@@ -78,8 +78,8 @@ const converse = (res, messages, type) => {
 	switch (type) {
 		case SYSTEM_PROMPTS.SIMPLE_ASSISTANT.TYPE:
 			return converseChat(res, messages, SYSTEM_PROMPTS.SIMPLE_ASSISTANT);
-		case SYSTEM_PROMPTS.USER.TYPE:
-			return converseChat(res, messages, SYSTEM_PROMPTS.USER);
+		case SYSTEM_PROMPTS.AutoAssist.TYPE:
+			return converseChat(res, messages, SYSTEM_PROMPTS.AutoAssist);
 		default:
 			return sendBadRequest(res, 'wrong_conversation_type');
 	}
