@@ -220,29 +220,29 @@ Autentificarea și autorizarea sunt esențiale în utilizarea atât a serviciilo
 
 # 5. Capturi ecran aplicație
 ## 5.1.	Pagina principala
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/1.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/1.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/1.png)
 
 Pagina principală, reprezentată de componenta MainPage, servește drept introducere și prezentare generală a serviciului "AutoXPert", în timp ce pagina de homepage oferă o prezentare mai detaliată a aplicației.
 
 ## 5.2.	Pagina Home
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/2.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/2.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/2.png)
 
 ## 5.3.	Pagina My Cars
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/3.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/3.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/3.png)
 
 Conceptul principal al acestei pagini este de a oferi utilizatorilor o listă vizuală a mașinilor pe care le dețin, împreună cu informații esențiale despre fiecare mașină, precum marca, modelul, numărul de înmatriculare și numărul de identificare al vehiculului (VIN).
 
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/4.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/4.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/4.png)
 
 Utilizatorii pot vedea o prezentare generală a tuturor mașinilor lor pe această pagină, precum și detalii suplimentare despre fiecare mașină individual prin intermediul unui modal care apare la clic pe butonul "Vezi detalii". De asemenea, aceștia au la dispoziție posibilitatea de a șterge mașini din lista lor, folosind butonul "Șterge mașina”, această acțiune actualizând lista în timp real, eliminând mașina ștearsă din interfață. În plus, pagina include și un buton pentru adăugarea unei noi mașini, care redirecționează utilizatorul către o altă pagină sau componentă destinată adăugării de mașini noi în lista lor.
 
 ## 5.4.	Pagina Add Car
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/5.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/5.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/5.png)
 
 Prin intermediul unui formular structurat, utilizatorii pot completa informațiile necesare cu ușurință, iar în cazul mașinilor cu piese de schimb, aceștia au posibilitatea de a adăuga și detalii despre piesele respective. 
 
 ## 5.5.	Pagina Virtual Assistant
-![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/6.png)
+[![image](https://github.com/TeodorVndrei/Proiect-CloudComputing/assets/6.png)](https://github.com/TeodorVndrei/Proiect-CloudComputing/blob/main/assets/6.png)
 
 Pagina "Virtual Assistant" servește ca un ghid interactiv pentru utilizatori în ceea ce privește informațiile despre vehiculele lor și piesele compatibile. Utilizatorii pot adresa întrebări variate, de la specificații despre mașină la recomandări pentru piese de schimb.
 
