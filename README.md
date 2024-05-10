@@ -234,7 +234,7 @@ Conceptul principal al acestei pagini este de a oferi utilizatorilor o listă vi
 
 ![Screenshot](assets/4.png)
 
-Utilizatorii pot vedea o prezentare generală a tuturor mașinilor lor pe această pagină, precum și detalii suplimentare despre fiecare mașină individual prin intermediul unui modal care apare la clic pe butonul "Vezi detalii". De asemenea, aceștia au la dispoziție posibilitatea de a șterge mașini din lista lor, folosind butonul "Șterge mașina”, această acțiune actualizând lista în timp real, eliminând mașina ștearsă din interfață. În plus, pagina include și un buton pentru adăugarea unei noi mașini, care redirecționează utilizatorul către o altă pagină sau componentă destinată adăugării de mașini noi în lista lor.
+Utilizatorii pot vedea o prezentare generală a tuturor mașinilor lor pe această pagină, precum și detalii suplimentare despre fiecare mașină individual prin intermediul unui modal care apare la click pe butonul "Vezi detalii". De asemenea, aceștia au la dispoziție posibilitatea de a șterge mașini din lista lor, folosind butonul "Șterge mașina”, această acțiune actualizând lista în timp real, eliminând mașina ștearsă din interfață. În plus, pagina include și un buton pentru adăugarea unei noi mașini, care redirecționează utilizatorul către o altă pagină sau componentă destinată adăugării de mașini noi în lista lor.
 
 ## 5.4.	Pagina Add Car
 ![Screenshot](assets/5.png)
