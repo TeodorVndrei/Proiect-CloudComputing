@@ -1,4 +1,3 @@
-// /pages/index.js
 import NavBar from "@/components/NavBar";
 import MainPage from "@/components/MainPage";
 

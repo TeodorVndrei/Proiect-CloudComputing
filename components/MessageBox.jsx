@@ -1,5 +1,3 @@
-// /components/MessageBox.jsx
-
 import React, {useEffect, useRef} from 'react';
 
 function MessageBox(props) {

@@ -1,4 +1,3 @@
-// /pages/api/records.js
 import {sendMethodNotAllowed, sendOk,} from '@/utils/apiMethods.js';
 import {getCollection} from "@/utils/functions";
 import {ObjectId,} from 'mongodb';

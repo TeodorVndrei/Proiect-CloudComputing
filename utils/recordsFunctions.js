@@ -1,4 +1,3 @@
-// /utils/recordsFunctions.js
 export const getRecords = async () => {
     try {
         const response = await fetch("/api/records", {

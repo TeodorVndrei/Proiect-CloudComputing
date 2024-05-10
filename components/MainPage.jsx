@@ -1,4 +1,3 @@
-// /components/MainPage.jsx
 import React from 'react';
 
 function NavLink({ to, children }) {

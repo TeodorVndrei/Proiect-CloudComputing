@@ -102,7 +102,7 @@ body {
 .mylist-record {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centrează cardul pe verticală */
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -194,7 +194,7 @@ body {
 
 .form-group button {
   margin: 0 auto;
-  display: block; /* Facem butonul să fie un element de tip block pentru a ocupa întreaga lățime a containerului */
+  display: block; 
 }
 
 label {
