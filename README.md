@@ -59,7 +59,7 @@ Serviciul OpenAI - ChatGPT API furnizează o soluție pentru a adăuga capacită
 ```
 În codul de mai sus, se efectuează o cerere către un API (/api/answer) folosind metoda POST. Procesul începe prin activarea stării de încărcare, după care cererea este trimisă către API cu informațiile necesare. În plus, este configurat un semnal de anulare a cererii pentru a limita timpul de răspuns la 20 de secunde, utilizând AbortSignal.timeout(20000).
 
-###De subliniez că această porțiune de cod reprezintă doar o parte din întreaga aplicație și nu reflectă în totalitate contextul general al acesteia.
+###De subliniat că această porțiune de cod reprezintă doar o parte din întreaga aplicație și nu reflectă în totalitate contextul general al acesteia.
 ```
 const SYSTEM_PROMPTS = {
 	SIMPLE_ASSISTANT: {
