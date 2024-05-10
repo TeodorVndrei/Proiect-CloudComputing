@@ -20,6 +20,7 @@ Linkul către repository-ul GitHub - https://github.com/TeodorVndrei/Proiect-Clo
 Linkul către platforma Vercel - https://proiect-cloud-computing-one.vercel.app/
 
 # Link Video:
+Link către videoclip: https://youtu.be/nVKJl7oNLw0
 
 # 2.Descriere problemă:
 Aplicația oferă utilizatorilor posibilitatea de a gestiona eficient informațiile despre vehiculele lor printr-o singură listă personalizată. Această listă conține toate detaliile relevante despre fiecare mașină, inclusiv marca, modelul, anul fabricației, numărul de înmatriculare, codul VIN și, mai important, piesele de schimb compatibile.
