@@ -250,11 +250,11 @@ Pagina "Virtual Assistant" servește ca un ghid interactiv pentru utilizatori î
  În concluzie, AutoXPert oferă o experiență completă și prietenoasă utilizatorilor săi, facilitând gestionarea informațiilor despre mașinile lor. De la crearea și administrarea listelor de mașini până la interacțiunea cu un asistent virtual pentru a primi sfaturi și informații, această aplicație este concepută pentru a satisface nevoile și pasiunile entuziaștilor auto. 
 
 # 7. Referințe
-https://lungu-mihai-adrian.gitbook.io/cloud-computing-2024-simpre
-https://nextjs.org/docs
-https://v2.tailwindcss.com/docs
-https://www.mongodb.com/docs/
-https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/
-https://platform.openai.com/docs/introduction
+- https://lungu-mihai-adrian.gitbook.io/cloud-computing-2024-simpre
+- https://nextjs.org/docs
+- https://v2.tailwindcss.com/docs
+- https://www.mongodb.com/docs/
+- https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/
+- https://platform.openai.com/docs/introduction
 
 
