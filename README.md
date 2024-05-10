@@ -17,7 +17,7 @@ AutoXPert este o aplicație concepută pentru entuziaștii de automobile, oferin
 Linkul către repository-ul GitHub - https://github.com/TeodorVndrei/Proiect-CloudComputing
 
 # Link Vercel:
-Linkul către platforma Vercel - https://proiect-cloud-computing-ivory.vercel.app/
+Linkul către platforma Vercel - https://proiect-cloud-computing-one.vercel.app/
 
 # Link Video:
 
